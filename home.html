@@ -1,0 +1,49 @@
+<script>
+  // Redirect if they didn't come from the password page
+  if (document.referrer.indexOf("index.html") === -1) {
+    alert("You're not allowed to view this page directly!");
+    window.location.href = "index.html";
+  }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Load Romantic Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>i love you pookie girl!</title>
+</head>
+<body>
+
+  <h1>i love you pookie girl</h1>
+
+  <p>
+    Sristi, being with you just feels right.<b> 
+    You make my days better without even trying.<b>
+    Every little thing about you 
+  .your smile, your laugh, the way you care means so much to me.
+   I don’t need fancy words,
+    I just want you to know I care about you more than anything.
+      You truly mean the world to me and I’m so lucky to have you
+  </p>
+
+  <button class="btn" onclick="location.href='surprise.html'">🎁 Click for a surprise</button>
+  <button class="btn" onclick="location.href='gallery.html'">📸 Our Memories</button>
+
+  <h1>This is for you 🎶</h1>
+
+  <audio id="birthdayAudio" controls>
+    <source src="audio" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <br>
+  <button class="play-btn" onclick="document.getElementById('birthdayAudio').play()">Play Music</button>
+
+</body>
+</html>
