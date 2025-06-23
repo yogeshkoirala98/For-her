@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(120deg, #ffe4e1, #ffc0cb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #8b0000;
+}
+
+h1 {
+  font-size: 2.5em;
+  animation: fadeIn 2s ease-in;
+  color: #ff4081;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+.btn {
+  margin: 10px;
+  padding: 15px 25px;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff1493;
+}
+
+.play-btn {
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  animation: pulse 2s infinite;
+}
+
+.play-btn:hover {
+  background: linear-gradient(135deg, #ff1493, #c71585);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 20, 147, 0.5);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+    }
