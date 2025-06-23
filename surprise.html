@@ -1,1 +1,89 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f5;
+      font-family: cursive;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      color: #ff1493;
+      font-size: 2.5em;
+    }
+    p {
+      color: #d63384;
+      font-size: 1.2em;
+      margin: 20px;
+    }
+    .heart {
+      font-size: 3em;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">💖</div>
+  <h1>Surprise, My Love!</h1>
+  <p>You’re the most precious part of my life.<br>
+     I hope this little surprise brings a smile to your face.<br>
+     </p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I am blessed to have you in my life🥹❤️</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #ffe6f0;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    h1 {
+      color: #ff4081;
+      margin-top: 100px;
+    }
+    audio {
+      margin-top: 30px;
+    }
+    .play-btn {
+      padding: 12px 20px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .play-btn:hover {
+      background-color: #e73370;
+    }
+  </style>
+</head>
+<body>
+  <h1>I love you, shristi! 🥹❤️</h1>
+  <audio id="birthdayAudio" controls>
+    <source src="audio" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <br>
+  <button class="play-btn" onclick="document.getElementById('birthdayAudio').play()">Play Music</button>
+</body>
+</html>
