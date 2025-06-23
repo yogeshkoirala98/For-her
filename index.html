@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome 💌</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+    }
+
+    button:hover {
+      background-color: #e754a6;
+    }
+
+    .box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Hey Shristi 💖</h2>
+    <p>Enter your secret code to open your surprise:</p>
+    <input type="password" id="passwordInput" placeholder="Your birthday pass">
+    <br>
+    <button onclick="checkPassword()">Unlock 🎁</button>
+    <p id="error" style="color:red;"></p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("passwordInput").value;
+      const correct = "2064/09/20","09/20","0920";  // ← change this to your desired password
+
+      if (password === correct) {
+        window.location.href = "home.html"; // ← the real birthday page
+      } else {
+        document.getElementById("error").innerText = "Wrong password. Try again 💔";
+      }
+    }
+  </script>
+</body>
+</html>
