@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Memories 💖</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
 
+    h1 {
+      color: #d63384;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 30px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hearts {
+      font-size: 1.5em;
+      animation: pulse 2s infinite;
+      color: #ff69b4;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(255, 105, 180, 0.4);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Sweet Memories 💑</h1>
+  <p class="hearts">🥺❤️</p>
+  <div class="gallery">
+    <img src="IMG-20250612-WA0001.jpg" alt="memory1">
+    <img src="IMG-20250612-WA0002.jpg" alt="memory2">
+    <img src="IMG-20250612-WA0000.jpg" alt="memory3">
+    <!-- Add more images like below -->
+    <!-- <img src="your-image.jpg" alt="memoryX"> -->
+  </div>
+</body>
+</html>
